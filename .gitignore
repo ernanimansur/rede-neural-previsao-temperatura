@@ -1,1 +1,14 @@
 data/data_INMET_zip
+
+# Ignorar ambientes virtuais
+.venv/
+
+# Ignorar arquivos do Jupyter (opcional)
+.ipynb_checkpoints/
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+.img/
