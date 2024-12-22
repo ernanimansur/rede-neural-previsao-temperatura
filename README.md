@@ -51,21 +51,22 @@ Os dados foram normalizados utilizando a ferramenta StandardScaler, que transfor
 
 Os dados foram divididos em 80% (122.131 dados) para o treinamento e 20% (30.533 dados) para o teste. Durante o treinamento, 20% (24.426  dados) dos dados de treinamento foram utilizados para validação,  enquanto os 80% restantes (97.705 dados) foram usados para  efetivamente treinar o modelo.
 
-
-A Figura abaixo mostra o custo ao longo das épocas para o treinamento do modelo.
+A Figura 2a mostra o custo ao longo das épocas para o treinamento do modelo.
 
 ![Imagem](img/perda%20x%20custo.png)
 
-A Figura abaixo mostra o Erro Quadrático Médio ao longo das épocas para o treinamento do modelo.
+A Figura 2b mostra o Erro Quadrático Médio ao longo das épocas para o treinamento do modelo.
 
 ![Imagem](img/rmse%20x%20epocas.png)
 
 Após o treinamento foram utilizados novos dados para testar o modelo. Foram utilizados as métricas R², que representa o percentual de variância dos dados que é explicado pelo modelo, MAE (Erro Médio Absoluto) e RMSE (Raiz do Erro Quadrático Médio) para avaliar as previsões do modelo. Os valores encontrados para o R², MAE e RMSE foram 0.99986, 0.0475 e 0.601, respectivamente.
 
-![Imagem](img/dados-previstos%20x%20dados%20reais.png)
-
 A Figura 4, mostra a diferença entre as temperaturas reais e previstas distribuídas aleatoriamente em 
 torno do zero. Isso indica que o modelo está capturando adequadamente a relação entre as variáveis.
+
+![Imagem](img/dados-previstos%20x%20dados%20reais.png)
+
+Observando a Figura 4b, identificamos a presença de alguns outliers. Esses outliers podem ter sido causados por ruídos durante o treinamento da rede  neural. A utilização de todos os dados meteorológicos mostrados na Figura 1, incluindo aqueles que não eram necessários, pode ter introduzido variabilidade indesejada, resultando nos outliers observados
 
 ![Imagem](img/residuos.png)
 
@@ -77,7 +78,6 @@ meteorológicos mostrados na Figura 1, incluindo
 aqueles que não eram necessários, pode ter 
 introduzido variabilidade indesejada, resultando 
 nos outliers observados
-
 
 # Tecnologias utilizadas
 
