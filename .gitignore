@@ -1,14 +1,20 @@
+# Dados do INMET
 data/data_INMET_zip
 
-# Ignorar ambientes virtuais
+# Ambiente virtual (cobre venv ou .venv, qualquer um)
+venv/
 .venv/
 
-# Ignorar arquivos do Jupyter (opcional)
+# Imagens
+.img/
+
+# Jupyter Notebook
 .ipynb_checkpoints/
 
-# Ignorar arquivos de cache do Python
+# Arquivos de cache do Python
 __pycache__/
 *.pyc
 *.pyo
 
-.img/
+# Arquivos temporários ou duplicados
+*.log
